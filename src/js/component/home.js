@@ -13,10 +13,10 @@ export function Home() {
 	if (counter2 === 10) {
 		setCounter2(0);
     }
-	useEffect(() => {
-		setInterval(() => {
-			setCounter(counter => counter + 1);
-		}, 100);
+	// useEffect(() => {
+	// 	setInterval(() => {
+	// 		setCounter(counter => counter + 1);
+	// 	}, 100);
     useEffect(() => {
 		setInterval(() => {
 			setCounter(counter2 => counter2 + 1);
