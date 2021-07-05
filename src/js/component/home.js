@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Card from ".card.js";
 
 //include images into your bundle
 // import rigoImage from "../../img/rigo-baby.jpg";
@@ -10,19 +11,19 @@ export function Home() {
 	const [counter3, setCounter3] = useState(0);
 	const [counter4, setCounter4] = useState(0);
 	const [counter5, setCounter5] = useState(0);
-	if (counter1 === 9) {
+	if (counter1 === 10) {
 		setCounter1(0);
 	}
-	if (counter2 === 9) {
+	if (counter2 === 10) {
 		setCounter2(0);
 	}
-	if (counter3 === 9) {
+	if (counter3 === 10) {
 		setCounter3(0);
 	}
-	if (counter4 === 9) {
+	if (counter4 === 10) {
 		setCounter4(0);
 	}
-	if (counter5 === 9) {
+	if (counter5 === 10) {
 		setCounter5(0);
 	}
 
@@ -53,7 +54,7 @@ export function Home() {
 	}, []);
 
 	return (
-		<div className="text-center mt-5">
+		<div className="text-center mt-5 row">
 			<h1>And counting!</h1>
 			<p>{counter1}</p>
 			<p>{counter2}</p>
