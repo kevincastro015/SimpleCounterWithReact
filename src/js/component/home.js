@@ -56,11 +56,11 @@ export function Home() {
 	return (
 		<div className="text-center mt-5 row">
 			<h1>And counting!</h1>
-			<p>{counter1}</p>
-			<p>{counter2}</p>
-			<p>{counter3}</p>
-			<p>{counter4}</p>
-			<p>{counter5}</p>
+			<Card number={counter5} />
+			<Card number={counter4} />
+			<Card number={counter3} />
+			<Card number={counter2} />
+			<Card number={counter1} />
 			{/* {<button onClick={() => setCounter(counter + 1)}>Increment</button>} */}
 		</div>
 	);
