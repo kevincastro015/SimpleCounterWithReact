@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Card from "./card";
+import { Card } from "./card";
 
 //include images into your bundle
 // import rigoImage from "../../img/rigo-baby.jpg";
@@ -54,7 +54,10 @@ export function Home() {
 	}, []);
 
 	return (
-		<div className="text-center mt-5 row">
+		<div className="text-center mt-5 row m-3">
+			<i
+				className="far fa-clock col text-white p-4"
+				style={{ width: "18rem", background: "black" }}></i>
 			<Card number={counter5} />
 			<Card number={counter4} />
 			<Card number={counter3} />
